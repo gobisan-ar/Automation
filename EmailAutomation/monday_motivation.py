@@ -1,10 +1,11 @@
 import datetime as dt
 import random
+import os
 from smtplib import SMTP, SMTPAuthenticationError
 
-MY_EMAIL = ""
-MY_PASSWORD = ""
-RECEIVER_EMAIL = ""
+SENDER_EMAIL = os.environ.get('SENDER_EMAIL')
+SENDER_PASSWORD =  os.environ.get('SENDER_PASSWORD')
+RECEIVER_EMAIL = os.environ.get('RECEIVER_EMAIL')
 
 now = dt.datetime.now()
 weekday = now.weekday()
@@ -18,12 +19,12 @@ if weekday == 0:
         connection.starttls()
 
         try:
-            connection.login(MY_EMAIL, MY_PASSWORD)
+            connection.login(SENDER_EMAIL, SENDER_PASSWORD)
         except SMTPAuthenticationError:
             print("Invalid credentials")
         else:
             connection.sendmail(
-                from_addr=MY_EMAIL,
+                from_addr=SENDER_EMAIL,
                 to_addrs=RECEIVER_EMAIL,
                 msg=f"Subject:Monday Motivation\n\n{quote}"
             )
