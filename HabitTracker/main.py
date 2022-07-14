@@ -4,7 +4,7 @@ from datetime import datetime
 
 USERNAME = os.environ.get('USERNAME')
 TOKEN = os.environ.get('TOKEN')
-GRAPH_ID = os.environ.get('GRAPH_ID')
+GRAPH_ID = "graph1"
 
 
 # Create user account
