@@ -12,7 +12,7 @@
 <ul>
   <li> <b>Cookie Clicker:</b> Automated the cookie clicker game using Selenium Webdriver.</li>
   <li> <b>Email Automation:</b> Automated email to be sent on birthdays and Monday.</li>
-  <li> <b>Flight Club:</b> Automated email to be sent when a fliht ticket price less than specified amount.</li>
+  <li> <b>Flight Club:</b> Automated email to be sent when a flight ticket price less than specified amount.</li>
   <li> <b>Habit Tracker:</b> Automated pixel habit tracker to track cycling habit.</li>
   <li> <b>ISS Overhead Notifier:</b> Automated email to be sent when ISS is above a specified location.</li>
   <li> <b>Rain Alert:</b> Automated notification to be sent when there will be raining.</li>
