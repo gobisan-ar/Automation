@@ -1,10 +1,12 @@
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
+from selenium.webdriver.chrome.service import Service
+from webdriver_manager.chrome import ChromeDriverManager
 import time
 
-chrome_driver_path = "D:\DevBase\DeveloperTools\Drivers\WebDrivers\chromedriver.exe"
-driver = webdriver.Chrome(executable_path=chrome_driver_path)
+chrome_driver_path = ""
+driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
 driver.get("http://orteil.dashnet.org/experiments/cookie/")
 
 # Get cookie to click
