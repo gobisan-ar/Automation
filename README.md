@@ -8,5 +8,5 @@
 </div>
 
 <ul>
-  <li> *Cookie Clicker:* Automated the cookie clicker game using Selenium Webdriver</li>
+  <li> <b>Cookie Clicker:</b> Automated the cookie clicker game using Selenium Webdriver</li>
 </ul>
