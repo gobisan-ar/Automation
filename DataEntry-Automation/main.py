@@ -14,7 +14,6 @@ ZILLOW_HEADERS = {
 }
 
 response = requests.get(url=ZILLOW_URL, headers=ZILLOW_HEADERS)
-response.raise_for_status()
 soup = BeautifulSoup(response.text, 'html.parser')
 
 all_link_elements = soup.select(".list-card-top a")
@@ -27,15 +26,12 @@ for link in all_link_elements:
         all_links.append(f"https://www.zillow.com{href}")
     else:
         all_links.append(href)
-print(all_links)
 
 all_address_elements = soup.select(".list-card-info address")
 all_addresses = [address.text for address in all_address_elements]
-print(all_addresses)
 
 all_price_elements = soup.select(".list-card-price")
 all_prices = [price.text for price in all_price_elements]
-print(all_prices)
 
 price_lbl = "$,/mo"
 
