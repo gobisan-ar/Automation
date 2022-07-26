@@ -38,4 +38,8 @@
     <a href="https://github.com/gobisan14/Automation/tree/main/WorkoutTracker">Workout Tracker: </a> 
     Automated workout tracker to track workouts done.
   </li>
+  <li> 
+    <a href="https://github.com/gobisan14/Automation/tree/main/DataEntry-Automation">Data Entry Automation: </a> 
+    Scrapped real estate data and automated google form data entry.
+  </li>
 </ul>
